@@ -9,13 +9,13 @@ fetch("https://icanhazdadjoke.com", {       //Object
 .then((data) => {
     console.log(data)
 
-    let divElm = document.querySelector("div");
-    let jokeElm = document.createElement("p");
-    jokeElm.classList.add("joke")
+     let divElm = document.querySelector("div");
+     let jokeElm = document.createElement("p");
+     //jokeElm.classList.add("theJoke")
 
-    jokeElm.innerHTML = `${data.joke}`          //data."classList"
+     jokeElm.innerHTML = `${data.joke}`          //data."object-key"
 
-    divElm.append(jokeElm);
+     divElm.append(jokeElm);
 })
 
 
